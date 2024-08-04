@@ -27,6 +27,7 @@ public class EmployeeManagerTest {
 		employeeManager = new EmployeeManager(employeeRepository, bankService);
 	}
 
+	// @BeforeEach
 	@Test
 	public void testPayEmployeesWhenNoEmployeesArePresent() {
 		when(employeeRepository.findAll())
